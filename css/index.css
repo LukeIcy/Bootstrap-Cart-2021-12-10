@@ -1,0 +1,153 @@
+#photowall .box .mybtn-blue {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+#carousel .swiper {
+  width: 100%;
+  height: 768px;
+}
+
+#service h1 {
+  text-align: center;
+}
+
+#service p {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+#service p::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 50px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: purple;
+}
+
+#service-info .col-4 {
+  text-align: center;
+}
+
+#service-info .service-topic {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 5px;
+  font-size: 32px;
+}
+
+#photowall .box {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+#photowall .box .mybtn-blue {
+  background-color: cornflowerblue;
+}
+
+.colorin {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+}
+
+#color-red:checked {
+  border: 8px solid #df2222;
+}
+
+#color-green:checked {
+  border: 8px solid #8cca27;
+}
+
+#color-blue:checked {
+  border: 8px solid #0640df;
+}
+
+#commodity .fa-gratipay {
+  font-size: 30px;
+  color: #b3b1b1;
+}
+
+#commodity .fa-gratipay:checked {
+  color: red;
+}
+
+#commodity span {
+  font-size: 20px;
+}
+
+.commodity-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.commodity-swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+
+.commodity-swiper .swiper-button-prev,
+.commodity-swiper .swiper-button-next {
+  background-color: crimson;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.commodity-swiper .swiper-button-prev::after,
+.commodity-swiper .swiper-button-next::after {
+  font-size: 20px;
+}
+
+#map {
+  position: relative;
+}
+
+#map .container {
+  position: relative;
+  height: 650px;
+}
+
+#map .container .feedback {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 400px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#map iframe {
+  position: absolute;
+  top: 3rem;
+}
+/*# sourceMappingURL=index.css.map */

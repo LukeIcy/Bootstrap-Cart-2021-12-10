@@ -1,0 +1,154 @@
+// @import '要外連的scss檔案名';  可以把其他scss整合起來
+@import "varaible";
+@import "mixin";
+
+#carousel {
+	.swiper {
+		width: 100%;
+		height: 768px;
+	}
+}
+
+#service {
+	h1 {
+		text-align: center;
+	}
+	p {
+		position: relative;
+		padding: 20px;
+		text-align: center;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			display: block;
+			width: 50px;
+			height: 3px;
+			border-radius: 3px;
+			background-color: $decortation-color;
+		}
+	}
+}
+
+#service-info {
+	.col-4 {
+		text-align: center;
+	}
+	.service-topic {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		border-radius: 50px;
+		text-align: center;
+		line-height: 50px;
+		padding-top: 5px;
+		font-size: 32px;
+	}
+}
+
+#photowall {
+	.box {
+		@include size(100%, 300px, 5px);
+		border: 1px solid #000;
+
+		.mybtn-blue {
+			@extend %mybtn;
+			background-color: cornflowerblue;
+		}
+	}
+}
+
+.colorin {
+	appearance: none;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #999;
+	transition: 0.2s all linear;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+}
+
+#color-red {
+	&:checked {
+		border: 8px solid rgb(223, 34, 34);
+	}
+}
+#color-green:checked {
+	border: 8px solid rgb(140, 202, 39);
+}
+
+#color-blue:checked {
+	border: 8px solid rgb(6, 64, 223);
+}
+
+#commodity {
+	.fa-gratipay {
+		font-size: 30px;
+		color: rgb(179, 177, 177);
+
+		// 無法生效
+		&:checked {
+			color: rgb(255, 0, 0);
+		}
+	}
+	span {
+		font-size: 20px;
+	}
+}
+
+// 改swiper樣式，直接用CSS覆蓋即可
+.commodity-swiper {
+	.swiper-pagination {
+		bottom: 0;
+		.swiper-pagination-bullet {
+			background-color: rgb(255, 0, 0);
+			width: 10px;
+			height: 10px;
+		}
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		background-color: crimson;
+		border-radius: 50px;
+		width: 30px;
+		height: 30px;
+		color: white;
+
+		// 移動按鈕是寫在after裡的，要改箭頭大小必須改after
+		&::after {
+			font-size: 20px;
+		}
+	}
+}
+
+#map {
+	position: relative;
+
+	.container {
+		position: relative;
+		height: 650px;
+
+		.feedback {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 400px;
+			padding: 15px;
+			background-color: #fff;
+			border-radius: 10px;
+		}
+	}
+
+	iframe {
+		position: absolute;
+		top: 3rem;
+	}
+}

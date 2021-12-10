@@ -1,0 +1,19 @@
+// layout的scss
+footer{
+    
+    .foot-menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .foot-menu-item {
+            color: darkgray;
+
+            // 偽元素的用法，「&: 加上 偽元素」，記得要有冒號
+            &:first-child {
+                margin-bottom: 5px;
+                color: black;
+            }
+        }
+    }
+}

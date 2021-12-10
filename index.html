@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My cart</title>
+	<!-- bootstrap Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<!-- swiper Core CSS CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+	<!-- aos Core CSS CDN -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- fontawesome Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- layout CSS -->
+	<link rel="stylesheet" href="./css/layout.css">
+
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+				<img src="./img/pepsi.png" width="80" height="80" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<div class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="./checkout01.html">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</div>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-user"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="./login.html">Login</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<!-- 輪播區塊 -->
+		<section id="carousel">
+			<div class="swiper main-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://placeholder.pics/svg/1920x768" class="d-block w-100" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://placeholder.pics/svg/1920x768" class="d-block w-100" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://placeholder.pics/svg/1920x768" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<!-- 服務介紹區塊 -->
+		<section id="service" class="py-5">
+			<div class="container">
+				<h1>服務介紹</h1>
+				<p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice
+					poutine, ramps microdosing banh mi pug.</p>
+			</div>
+		</section>
+
+		<!-- 服務資訊區塊 -->
+		<section id="service-info" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<div class="service-topic">
+							<i class="fas fa-burn"></i>
+						</div>
+						<h2>Heading</h2>
+						<p>Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's
+							beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me.
+							Heaven is
+							jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+						<p>
+							<button type="button" class="btn btn-secondary">View details »</button>
+						</p>
+					</div>
+					<div class="col-4">
+						<div class="service-topic">
+							<i class="fas fa-burn"></i>
+						</div>
+						<h2>Heading</h2>
+						<p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels
+							are
+							crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll
+							give you
+							a taste. There’s no going back. Before you met me I was alright but things were kinda heavy.
+							Heavy
+							is the head that wears the crown.</p>
+						<p>
+							<button type="button" class="btn btn-secondary">View details »</button>
+						</p>
+					</div>
+					<div class="col-4">
+						<div class="service-topic">
+							<i class="fas fa-burn"></i>
+						</div>
+						<h2>Heading</h2>
+						<p>Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand.
+							She's
+							sweet as pie but if you break her heart. But down to earth. It's time to face the music I'm
+							no
+							longer your muse. I guess that I forgot I had a choice.</p>
+						<p>
+							<button type="button" class="btn btn-secondary">View details »</button>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- 照片牆區塊 -->
+		<section id="photowall" class="py-5">
+			<div class="container">
+				<div class="d-flex">
+					<h1 class="w-25">照片牆</h1>
+					<p class="w-75">
+						Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway
+						tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing
+						selfies heirloom.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+							<div class="col-12">
+								<div class="box"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12">
+								<div class="box"></div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 重點商品區塊 -->
+		<section id="commodity" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 offset-1">
+						<img class="w-100" src="https://placeholder.pics/svg/400x400" alt="">
+					</div>
+					<form class="col-5" action="/shumei" method="get">
+						<div class="commodity-Brand">BRAND NAME</div>
+						<div class="commodity-Bname">The Catcher in the Rye</div>
+						<!-- 我的d-flex之前在下面這邊失效 原因是我用id 應該要用class -->
+						<div class="commodity-review d-flex">
+							<div class="five-stars d-flex align-items-center">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<div class="comments mx-2">4 Reviews</div>
+							<div class="share d-flex align-items-center">
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fas fa-comment"></i>
+							</div>
+						</div>
+						<p class="commodity-text my-3">Fam locavore kickstarter distillery. Mixtape chillwave tumeric
+							sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim
+							forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin
+							listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+						<div class="d-flex align-items-center">
+							<!-- 顏色選擇 -->
+							<span class="mr-2">Color</span>
+							<input type="radio" id="color-red" class="colorin" name="color" value="red" checked>
+							<input type="radio" id="color-green" class="colorin" name="color" value="green">
+							<input type="radio" id="color-blue" class="colorin" name="color" value="blue">
+							
+							<span class="ml-5 mr-2">size</span>
+							<!-- 尺寸選擇 name必須要加在select裡面，才能傳送資料-->
+							<select class="form-control w-auto" name="size">
+								<option value="SM">SM</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+								<option value="XL">X</option>
+							</select>
+						</div>
+						<hr>
+						<div class="d-flex justify-content-between align-items-center">
+							<span>$58.00</span>
+							<div class="d-flex align-items-center">
+								<button type="submit" class="btn btn-primary mr-1">add cart</button>
+								<i class="fab fa-gratipay" type="button"></i>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- 商品輪播區 -->
+		<section id="slide-commodity">
+			<div class="container">
+				<div class="swiper commodity-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<!-- swiper裡放入bootstrap的card -->
+							<div class="card">
+								<img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the
+										bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- swiper裡放入bootstrap的card -->
+							<div class="card">
+								<img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the
+										bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- swiper裡放入bootstrap的card -->
+							<div class="card">
+								<img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the
+										bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- swiper裡放入bootstrap的card -->
+							<div class="card">
+								<img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the
+										bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- swiper裡放入bootstrap的card -->
+							<div class="card">
+								<img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the
+										bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- pagination 分頁 -->
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 地圖區塊 -->
+		<section id="map" class="py-5">
+			<div class="container">
+				<div class="feedback">
+					<h3>Feedback</h3>
+					<p>Post-ironic portland shabby chic echo park, banjo fashion axev</p>
+					<!-- 表單傳送資料的路徑 action="送去哪裡" 發送方式 method="方式"-->
+					<form action="/mypath" method="get">
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email</label>
+							<input type="text" class="form-control" name="email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Message</label>
+							<textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+						</div>
+						<!--送資料時 要把button的type改成sumbit 才能送出  -->
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0074524911715!2d2.2943671656743705!3d48.85806827928744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z6Im-6I-y54i-6ZC15aGU!5e0!3m2!1szh-TW!2stw!4v1638508179427!5m2!1szh-TW!2stw"
+				width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy">
+			</iframe>
+		</section>
+	</main>
+
+	<!-- 底部導覽 -->
+	<footer>
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<div class="footer-brand mb-2">
+							<img class="mr-2" src="./img/pepsi.png" width="50px" alt="">
+							<span class="brand-name h4 mt-4">帕系可樂</span>
+						</div>
+						<p class="footer-intro ml-1">帕系可樂就是百事可樂，不要懷疑。</p>
+					</div>
+					<div class="col">
+						<ul class="foot-menu">
+							<li class="foot-menu-item">CATEGORIES</li>
+							<li class="foot-menu-item">First Link</li>
+							<li class="foot-menu-item">Second Link</li>
+							<li class="foot-menu-item">Third Link</li>
+							<li class="foot-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="foot-menu">
+							<li class="foot-menu-item">CATEGORIES</li>
+							<li class="foot-menu-item">First Link</li>
+							<li class="foot-menu-item">Second Link</li>
+							<li class="foot-menu-item">Third Link</li>
+							<li class="foot-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="foot-menu">
+							<li class="foot-menu-item">CATEGORIES</li>
+							<li class="foot-menu-item">First Link</li>
+							<li class="foot-menu-item">Second Link</li>
+							<li class="foot-menu-item">Third Link</li>
+							<li class="foot-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="foot-menu">
+							<li class="foot-menu-item">CATEGORIES</li>
+							<li class="foot-menu-item">First Link</li>
+							<li class="foot-menu-item">Second Link</li>
+							<li class="foot-menu-item">Third Link</li>
+							<li class="foot-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-light py-1 pt-3 pb-3">
+			<div class="container  d-flex justify-content-between">
+				<div class="copyright">
+					© 2020 Tailblocks — @knyttneve
+				</div>
+				<div class="community">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- jquery Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+	<!-- popper Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+		</script>
+	<!-- bootstrap Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+		</script>
+	<!-- swiper Core JS CDN -->
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<!-- aos Core JS CDN -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- my swiper JS -->
+	<script src="./js/swiper.js"></script>
+
+	<!-- parallax Core JS CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+	<!-- my aos js -->
+	<script src="./js/aos.js"></script>
+
+	<!-- my parallax js -->
+	<script src="./js/parallax.js"></script>
+</body>
+
+</html>

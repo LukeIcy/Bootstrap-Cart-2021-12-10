@@ -1,0 +1,15 @@
+footer .foot-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .foot-menu .foot-menu-item {
+  color: darkgray;
+}
+
+footer .foot-menu .foot-menu-item:first-child {
+  margin-bottom: 5px;
+  color: black;
+}
+/*# sourceMappingURL=layout.css.map */

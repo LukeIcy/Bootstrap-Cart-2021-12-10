@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAEI,MAFE,CAEF,UAAU,CAAA;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CAWnB;;AAhBL,AAOQ,MAPF,CAEF,UAAU,CAKN,eAAe,CAAC;EACZ,KAAK,EAAE,QAAQ;CAOlB;;AAfT,AAWY,MAXN,CAEF,UAAU,CAKN,eAAe,AAIV,YAAY,CAAC;EACV,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../sass/layout.scss"
+    ],
+    "names": [],
+    "file": "layout.css"
+}

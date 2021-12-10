@@ -1,0 +1,10 @@
+// 檔名前面加上底線(_),就不會被scss編譯成css
+// 因為有些檔案只是用來宣告變數等的，為了不讓css變得冗長，所以讓它不被編譯
+$decortation-color: purple;
+
+// 使用 %(佔位符)作為開頭，就不會被 scss 編譯出來，除非使用 @extend 調用
+%mybtn {
+	padding: 8px 12px;
+	border: none;
+	border-radius: 10px;
+}
