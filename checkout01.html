@@ -10,21 +10,21 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
 		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-        <!-- fontawesome Core CSS CDN -->
+	<!-- fontawesome Core CSS CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- 自己寫的css記得放在引入的CDN下面，layout要有獨立的css-->
 	<link rel="stylesheet" href="./css/layout.css">
+	<link rel="stylesheet" href="./css/checkout01.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
 			<a class="navbar-brand" href="./index.html">
-				<img src="./img/pepsi.png" width="80" height="80"
-					alt="">
+				<img src="./img/pepsi.png" width="80" height="80" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,14 +47,14 @@
 					</div>
 					<div class="nav-item">
 						<a class="nav-link" href="./checkout01.html">
-                            <!-- FontAwesome放在a中 -->
+							<!-- FontAwesome放在a中 -->
 							<i class="fas fa-shopping-cart"></i>
 						</a>
 					</div>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-expanded="false">
-                            <!-- FontAwesome放在a中 -->
+							<!-- FontAwesome放在a中 -->
 							<i class="fas fa-user"></i>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,37 +66,91 @@
 		</div>
 	</nav>
 
-    <main class="py-5 bg-secondary">
+	<main class="py-5 cart-main">
 		<div class="container">
-			<div class="card">
-				<h5 class="card-header">購物車</h5>
+			<div class="card d-flex">
+				<h5 class="card-header">
+					<span class="h2">購物車</span>
+					<div class="steps d-flex justify-content-around mb-3 mt-3">
+						<div class="step d-flex flex-column align-items-center justify-content-center">
+							<i class="fas fa-tasks" style="color: aliceblue;"></i>
+							<span class="text-white h6 pt-1">確認購物車</span>
+						</div>
+						<div class="step d-flex flex-column align-items-center justify-content-center">
+							<i class="fas fa-tasks" style="color: aliceblue;"></i>
+							<span class="text-white h6 pt-1">付款與運送</span>
+						</div>
+						<div class="step d-flex flex-column align-items-center justify-content-center">
+							<i class="fas fa-tasks" style="color: aliceblue;"></i>
+							<span class="text-white h6 pt-1">填寫資料</span>
+						</div>
+						<div class="step d-flex flex-column align-items-center justify-content-center">
+							<i class="fas fa-tasks" style="color: aliceblue;"></i>
+							<span class="text-white h6 pt-1">完成訂購</span>
+						</div>
+					</div>
+				</h5>
+				<span class="h4 ml-4 mt-4">訂單明細</span>
 				<div class="card-body">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div class="product-in-cart d-flex justify-content-between">
+						<div class="product-info d-flex font-weight-bolder">
+							<img src=" " class="product-img rounded-circle"
+								alt="">
+							<div class="product-name ml-2 mt-1">
+								<div class="product-name-1">商品巴拉巴拉巴啦</div>
+								<div class="product-name-2 font-weight-light">#154538</div>
+							</div>
+						</div>
+						<div class="product-num-cost">
+							<div class="product-num"></div>
+							<div class="product-cost">
 
-				  <a href="#" class="btn btn-primary">下一步</a>
+							</div>
+						</div>
+					</div>
+
+
+					<hr>
+					<div class="payment-info d-flex justify-content-end">
+						<div class="payment-title d-flex flex-column font-weight-light">
+							<span class="commodity-num-text">數量：</span>
+							<span class="commodity-cost-text">小計：</span>
+							<span class="freight-cost-text">運費：</span>
+							<span class="total-cost-text">總計：</span>
+						</div>
+						<div class="payment-data d-flex flex-column text-right font-weight-bolder">
+							<span class="commodity-num">20</span>
+							<span class="commodity-cost text-right ">500</span>
+							<span class="freight-cost text-right ">1000</span>
+							<span class="total-cost text-right ">1500</span>
+						</div>
+
+					</div>
+					<hr>
+					<div class="btn-back-front d-flex justify-content-between">
+						<a href="#" class="btn-lg btn-secondary">返回購物</a>
+						<a href="checkout02.html" class="btn-lg btn-primary">下一步</a>
+					</div>
+
 				</div>
-			  </div>
+			</div>
 		</div>
-    </main>
+	</main>
 
     <footer>
         <div class="py-5">
             <div class="container">
                 <div class="row">
                     <!-- 如果欄位不是網格系統中的類型，直接使用col即可，在這個案例中，用5個col -->
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
 						<div class="footer-brand mb-2">
 							<img class="mr-2" src="./img/pepsi.png" width="50px" alt="">
 							<span class="brand-name h4 mt-4">帕系可樂</span>
 						</div>
 						<p class="footer-intro ml-1">帕系可樂就是百事可樂，不要懷疑。</p>
                     </div>
-                    <div class="col">
-                        <ul class="foot-menu">
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
                             <li class="foot-menu-item">CATEGORIES</li>
                             <li class="foot-menu-item">First Link</li>
                             <li class="foot-menu-item">Second Link</li>
@@ -104,8 +158,8 @@
                             <li class="foot-menu-item">Fourth Link</li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <ul class="foot-menu">
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
                             <li class="foot-menu-item">CATEGORIES</li>
                             <li class="foot-menu-item">First Link</li>
                             <li class="foot-menu-item">Second Link</li>
@@ -113,8 +167,8 @@
                             <li class="foot-menu-item">Fourth Link</li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <ul class="foot-menu">
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
                             <li class="foot-menu-item">CATEGORIES</li>
                             <li class="foot-menu-item">First Link</li>
                             <li class="foot-menu-item">Second Link</li>
@@ -122,8 +176,8 @@
                             <li class="foot-menu-item">Fourth Link</li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <ul class="foot-menu">
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
                             <li class="foot-menu-item">CATEGORIES</li>
                             <li class="foot-menu-item">First Link</li>
                             <li class="foot-menu-item">Second Link</li>

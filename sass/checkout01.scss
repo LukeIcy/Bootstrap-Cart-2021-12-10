@@ -1,0 +1,29 @@
+.cart-main{
+    background-color: rgb(209, 213, 219);
+}
+.card-header{
+    background-color: rgb(243,244,246);
+}
+.step{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(205, 226, 243);
+    border-radius: 50px;
+    &:first-child{
+        background-color: rgb(32, 93, 216);
+    }
+}
+
+.product-img{
+    background-color: rgb(184, 184, 184);
+    width: 60px;
+    height: 60px;
+}
+
+.payment-title{
+    width: 100px;
+}
+
+.payment-data{
+    width: 100px;
+}

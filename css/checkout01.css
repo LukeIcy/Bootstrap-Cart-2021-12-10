@@ -1,0 +1,33 @@
+.cart-main {
+  background-color: #d1d5db;
+}
+
+.card-header {
+  background-color: #f3f4f6;
+}
+
+.step {
+  width: 100px;
+  height: 100px;
+  background-color: #cde2f3;
+  border-radius: 50px;
+}
+
+.step:first-child {
+  background-color: #205dd8;
+}
+
+.product-img {
+  background-color: #b8b8b8;
+  width: 60px;
+  height: 60px;
+}
+
+.payment-title {
+  width: 100px;
+}
+
+.payment-data {
+  width: 100px;
+}
+/*# sourceMappingURL=checkout01.css.map */
