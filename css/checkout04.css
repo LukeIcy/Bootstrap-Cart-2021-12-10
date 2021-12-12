@@ -1,0 +1,76 @@
+.cart-main {
+  background-color: #d1d5db;
+}
+
+.product-bgc {
+  background-color: #f3f4f6;
+}
+
+.step {
+  width: 100px;
+  height: 100px;
+  background-color: #205dd8;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.progressline {
+  border-color: white;
+  height: 15px;
+  top: 45%;
+  -webkit-transform: translate-y(50%);
+          transform: translate-y(50%);
+  z-index: 1;
+}
+
+.progressline::-webkit-progress-bar {
+  background: #e9e9eb;
+}
+
+.progressline::-webkit-progress-value {
+  background: #2f6fe6;
+}
+
+.complete {
+  text-align: center;
+  font-size: 48px;
+}
+
+.product-img {
+  background-color: #b8b8b8;
+  width: 60px;
+  height: 60px;
+}
+
+.btn-outline-info {
+  height: 40px;
+}
+
+.product-num-cost {
+  width: 100px;
+}
+
+.product-num-cost .product-num {
+  width: 200px;
+}
+
+.product-num-cost .product-num-count {
+  width: 50px;
+}
+
+.person-block {
+  height: 280px;
+}
+
+.person-block .person-info {
+  height: 100%;
+}
+
+.payment-title {
+  width: 100px;
+}
+
+.payment-data {
+  width: 100px;
+}
+/*# sourceMappingURL=checkout04.css.map */

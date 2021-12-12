@@ -1,0 +1,49 @@
+.cart-main {
+  background-color: #d1d5db;
+}
+
+.product-bgc {
+  background-color: #f3f4f6;
+}
+
+.step {
+  width: 100px;
+  height: 100px;
+  background-color: #cde2f3;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.step:first-child, .step:nth-child(2) {
+  background-color: #205dd8;
+}
+
+.progressline {
+  border-color: white;
+  height: 15px;
+  top: 45%;
+  -webkit-transform: translate-y(50%);
+          transform: translate-y(50%);
+  z-index: 1;
+}
+
+.progressline::-webkit-progress-bar {
+  background: #e9e9eb;
+}
+
+.progressline::-webkit-progress-value {
+  background: #2f6fe6;
+}
+
+.width100p {
+  width: 100%;
+}
+
+.payment-title {
+  width: 100px;
+}
+
+.payment-data {
+  width: 100px;
+}
+/*# sourceMappingURL=checkout02.css.map */

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap Core CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- fontawesome Core CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 自己寫的css記得放在引入的CDN下面，layout要有獨立的css-->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/checkout04.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/pepsi.png" width="80" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="./checkout01.html">
+                            <!-- FontAwesome放在a中 -->
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <!-- FontAwesome放在a中 -->
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./login.html">Login</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5 cart-main">
+        <div class="container">
+            <div class="card d-flex product-bgc">
+                <!-- 步驟進度區 -->
+                <h5 class="card-header product-bgc">
+                    <span class="h2">購物車</span>
+                    <div class="steps d-flex justify-content-around mb-3 mt-3 position-relative">
+                        <div class="step d-flex flex-column align-items-center justify-content-center">
+                            <i class="fas fa-tasks" style="color: aliceblue;"></i>
+                            <span class="text-white h6 pt-1">確認購物車</span>
+                        </div>
+                        <div class="step d-flex flex-column align-items-center justify-content-center">
+                            <i class="fas fa-truck" style="color: aliceblue;"></i>
+                            <span class="text-white h6 pt-1">付款與運送</span>
+                        </div>
+                        <div class="step d-flex flex-column align-items-center justify-content-center">
+                            <i class="far fa-edit" style="color: aliceblue;"></i>
+                            <span class="text-white h6 pt-1">填寫資料</span>
+                        </div>
+                        <div class="step d-flex flex-column align-items-center justify-content-center">
+                            <i class="fas fa-glass-cheers" style="color: aliceblue;"></i>
+                            <span class="text-white h6 pt-1">完成訂購</span>
+                        </div>
+                        <!-- 進度條 -->
+                        <progress class="progressline position-absolute w-75" value="100" max="100"></progress>
+                    </div>
+                </h5>
+                <!-- 整體訂單區 -->
+                <div class="card-body">
+                    <div class="complete font-weight-bolder">訂單成立</div>
+                    <!-- 訂單明細 -->
+                    <div class="h4 ml-1 mb-4">訂單明細</div>
+					<div class="product-in-cart d-flex justify-content-between my-4">
+						<div class="product-info d-flex font-weight-bolder">
+							<img src=" " class="product-img rounded-circle" alt="">
+							<div class="product-name ml-2 mt-1">
+								<div class="product-name-1">商品巴拉巴拉巴啦</div>
+								<div class="product-name-2 font-weight-light">#965478</div>
+							</div>
+						</div>
+						<div class="product-num-cost d-flex  align-items-center justify-content-between">
+							<!-- 商品單價 -->
+                            <span>x1</span>
+							<div class="product-cost font-weight-bolder">
+								<span>75</span>元
+							</div>
+						</div>
+					</div>
+                    <hr>
+					<div class="product-in-cart d-flex justify-content-between my-4">
+						<div class="product-info d-flex font-weight-bolder">
+							<img src=" " class="product-img rounded-circle" alt="">
+							<div class="product-name ml-2 mt-1">
+								<div class="product-name-1">商品喞哩喞哩</div>
+								<div class="product-name-2 font-weight-light">#154538</div>
+							</div>
+						</div>
+						<div class="product-num-cost d-flex  align-items-center justify-content-between">
+							<!-- 商品單價 -->
+                            <span>x1</span>
+							<div class="product-cost font-weight-bolder">
+								<span>26</span>元
+							</div>
+						</div>
+					</div>
+                    <hr>
+					<div class="product-in-cart d-flex justify-content-between my-4">
+						<div class="product-info d-flex font-weight-bolder">
+							<img src=" " class="product-img rounded-circle" alt="">
+							<div class="product-name ml-2 mt-1">
+								<div class="product-name-1">商品咕嚕咕嚕</div>
+								<div class="product-name-2 font-weight-light">#135746</div>
+							</div>
+						</div>
+						<div class="product-num-cost d-flex  align-items-center justify-content-between">
+							<!-- 商品單價 -->
+                            <span>x1</span>
+							<div class="product-cost font-weight-bolder">
+								<span>49</span>元
+							</div>
+						</div>
+					</div>
+                    <hr>
+                    <div class="h4 ml-1 mb-4">寄送資料</div>
+                    <div class="person-block d-flex">
+                        <div class="person-info">
+                            <div class="h-25 h5 ml-2 mr-4">姓名</div>
+                            <div class="h-25 h5 ml-2 mr-4">電話</div>
+                            <div class="h-25 h5 ml-2 mr-4">Email</div>
+                            <div class="h-25 h5 ml-2 mr-4">地址</div>
+                        </div>
+                        <div class="person-content">
+                            <div class="h-25 h5">王菲菲</div>
+                            <div class="h-25 h5">0954278954</div>
+                            <div class="h-25 h5">qweeqdw@gmail.com</div>
+                            <div class="h-25 h5">42056台中市豐原區中正路127號</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- 商品總計區 -->
+                    <div class="payment-info d-flex justify-content-end">
+                        <div class="payment-title d-flex flex-column font-weight-light">
+                            <span class="commodity-num-text">數量：</span>
+                            <span class="commodity-cost-text">小計：</span>
+                            <span class="freight-cost-text">運費：</span>
+                            <span class="total-cost-text">總計：</span>
+                        </div>
+                        <div class="payment-data d-flex flex-column text-right font-weight-bolder">
+                            <span class="commodity-num">20</span>
+                            <span class="commodity-cost text-right ">500</span>
+                            <span class="freight-cost text-right ">1000</span>
+                            <span class="total-cost text-right ">1500</span>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <!-- 下一步及返回按鈕區 -->
+                    <div class="btn-back-front d-flex justify-content-end">
+                        <a href="index.html" class="btn-lg btn-primary">返回首頁</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- 如果欄位不是網格系統中的類型，直接使用col即可，在這個案例中，用5個col -->
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-brand mb-2">
+                            <img class="mr-2" src="./img/pepsi.png" width="50px" alt="">
+                            <span class="brand-name h4 mt-4">帕系可樂</span>
+                        </div>
+                        <p class="footer-intro ml-1">帕系可樂就是百事可樂，不要懷疑。</p>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-1 pt-3 pb-3">
+            <div class="container  d-flex justify-content-between">
+                <div class="copyright">
+                    © 2020 Tailblocks — @knyttneve
+                </div>
+                <div class="community">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- popper Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap Core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <!-- my js -->
+    <script src="./js/checkout.js"></script>
+</body>
+
+</html>

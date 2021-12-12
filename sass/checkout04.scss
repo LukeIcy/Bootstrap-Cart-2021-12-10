@@ -1,0 +1,62 @@
+.cart-main{
+    background-color: rgb(209, 213, 219);
+}
+.product-bgc{
+    background-color: #f3f4f6;
+}
+
+.step{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 93, 216);
+    border-radius: 50px;
+    z-index: 2;
+}
+.progressline{
+    border-color: rgb(255, 255, 255);
+    height: 15px;
+    top: 45%;
+    transform: translate-y(50%);
+    z-index: 1;
+    &::-webkit-progress-bar { background: rgb(233, 233, 235); }
+    &::-webkit-progress-value {background: rgb(47, 111, 230)}
+}
+
+.complete{
+    text-align: center;
+    font-size: 48px;
+}
+
+.product-img{
+    background-color: rgb(184, 184, 184);
+    width: 60px;
+    height: 60px;
+}
+.btn-outline-info{
+    height: 40px;
+}
+
+.product-num-cost{
+    width: 100px;
+    .product-num{
+        width: 200px;
+    }
+    .product-num-count{
+        width: 50px;
+    }
+}
+
+.person-block{
+    height: 280px;
+    .person-info{
+        height: 100%;
+    }
+}
+
+.payment-title{
+    width: 100px;
+}
+.payment-data{
+    width: 100px;
+}
+

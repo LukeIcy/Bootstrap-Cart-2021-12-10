@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login from codepen</title>
+
+        <!-- fontawesome Core CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <h2>歡迎來到OOX購物網站，這裡有您最不想要的商品</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>建立您的OOX帳戶</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>或使用您的電子郵件註冊</span>
+			<input type="text" placeholder="姓名" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="密碼" />
+			<button>註冊</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>登入</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>或使用您的帳號</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="密碼" />
+			<a href="index.html">忘記密碼</a>
+            <!-- copy下來的程式 沒辦法用onclick跳頁 -->
+            <!-- onclick="javascript:location.href='./index.html';" -->
+			<button>登入</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>歡迎回來!</h1>
+				<p>登入您的帳號以保持與我們的聯繫</p>
+				<button class="ghost" id="signIn">登入</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>嗨，福蘭德</h1>
+				<p>輸入您的個人詳細資料，並開始體驗我們帶給你的奇幻旅程</p>
+				<button class="ghost" id="signUp">註冊</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer>
+
+<script src="./js/login.js"></script>
+</body>
+</html>
