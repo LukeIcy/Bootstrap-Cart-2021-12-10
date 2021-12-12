@@ -5,7 +5,7 @@ let addBtn = document.querySelectorAll('.add-btn');
 let minusBtn = document.querySelectorAll('.minus-btn');
 // input輸入框，單項商品統計數量，會隨著+跟-按鈕變化
 let itemNumInput = document.querySelectorAll('.order-input');
-// 單項商品價格，sr-only那個，是定值
+// 單項商品定價，sr-only那個，是定值
 let itemPrice = document.querySelectorAll('.product-price')
 // 單項商品的統計價格，會隨著+跟-按鈕變化
 let itemCost = document.querySelectorAll('.product-cost span');
@@ -16,7 +16,7 @@ let comNum = document.querySelector(".commodity-num");
 let comCost = document.querySelector(".commodity-cost");
 // 運費
 let freCost = document.querySelector(".freight-cost");
-// 總費用 = 商品總價格 + 運費
+// 此份訂單總費用 = 商品總價格 + 運費
 let totalCost = document.querySelector(".total-cost");
 
 
@@ -29,10 +29,10 @@ window.onload = function () {
         // itemCost[i].innerHTML = itemNumInput[i].value * itemPrice[i].textContent;
         // 上面這條函式被封裝，變成下面那條
         calcOrderItemCost(i);
-
     }
 }
 
+// 每次點擊增加按鈕，對應的單項商品數量+1
 addBtn.forEach(function (btn, index) {
     btn.addEventListener('click', function () {
         // itemNumInput[index].value = Number(itemNumInput[index].value) + 1;
@@ -46,6 +46,7 @@ addBtn.forEach(function (btn, index) {
     });
 });
 
+// 每次點擊增加按鈕，對應的單項商品數量+1
 minusBtn.forEach(function (btn, index) {
     btn.addEventListener('click', function () {
         // 以下是防呆之一
@@ -90,19 +91,63 @@ itemNumInput.forEach(function (input, index) {
     })
 });
 
-// 封裝函式1
+// 封裝函式01
+// 計算單項商品價格的函式
 // 發現程式碼重複後，就進行封裝，DRY程式原則
-// 下面是計算單項商品價格的函式
-function calcOrderItemCost(index) {
-    itemCost[index].innerHTML = itemNumInput[index].value * itemPrice[index].textContent;
-}
-// 封裝函式2
+// function calcOrderItemCost(index) {
+//     itemCost[index].innerHTML = itemNumInput[index].value * 
+//     itemPrice[index].textContent;
+// }
+
+// 封裝函式02
 // 按鈕功能(+)跟(-)的封裝，下面是增減單項商品數量的按鈕函式
 // function itemButton(index,num) {
 //     itemNumInput[index].value = Number(itemNumInput[index].value) + num;
 // }
-// 上面那條封裝函式，第二次調整，將執行後的計算功能也加入(包入第一條封裝的函式)
+
+// 封裝函式03 = 封裝函式02 + 封裝函式01
+// 上面"封裝函式02"的第二次調整，將執行後的計算功能也加入(包入"封裝函式01")
 function itemButton(index, num) {
     itemNumInput[index].value = Number(itemNumInput[index].value) + num;
     calcOrderItemCost(index)
+}
+
+// 封裝函式04
+// 計算所有商品加總數量、加總金額
+function calcAllComNum() {
+    // 設變數等於"商品總數量"
+    let allComNum = 0;
+    // 設變數等於"商品總金額"
+    let allComCost = 0;
+    // 設變數等於"運費"，原始運費150元
+    let OrifreCost = 150;
+    // .length抓的是單項商品數量的陣列集合
+    for (let i = 0; i < itemNumInput.length; i++) {
+        allComNum = allComNum + parseInt(itemNumInput[i].value); 
+        // allComCost = allComCost + parseInt(itemCost[i].value);
+        // 上面是錯誤的，要用textContent
+        allComCost = allComCost + parseInt(itemCost[i].textContent);
+    }
+
+    // 價格總計300元免運費
+    if (allComCost >= 300) {
+        OrifreCost = 0;
+    }
+    // 商品數量總計的.innerHTML是單項商品數量的加總
+    comNum.innerHTML = allComNum + "個";
+    // 商品金額總計的.innerHTML是單項商品金額的加總
+    comCost.innerHTML = allComCost + "元";
+    // 運費是獨立項目，只有針對這個函式中的免運條件變動
+    freCost.innerHTML = OrifreCost + "元";
+    // 訂單總費用是獨自項目，直接在這個函式中跟商品金額總計與運費連動
+    totalCost.innerHTML = allComCost + OrifreCost + "元";
+
+}
+
+// 封裝函式05 = 封裝函式01 + 封裝函式04
+// 上面"封裝函式01"的第二次調整，將計算商品加總數量功能也加入(包入"封裝函式04")
+function calcOrderItemCost(index) {
+    itemCost[index].innerHTML = itemNumInput[index].value * 
+    itemPrice[index].textContent;
+    calcAllComNum(index);
 }
