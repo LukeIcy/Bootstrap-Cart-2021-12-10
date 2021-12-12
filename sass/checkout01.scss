@@ -1,17 +1,29 @@
 .cart-main{
     background-color: rgb(209, 213, 219);
 }
-.card-header{
-    background-color: rgb(243,244,246);
+.product-bgc{
+    background-color: #f3f4f6;
 }
+
 .step{
     width: 100px;
     height: 100px;
     background-color: rgb(205, 226, 243);
     border-radius: 50px;
+    z-index: 2;
     &:first-child{
         background-color: rgb(32, 93, 216);
     }
+}
+
+.progressline{
+    border-color: rgb(255, 255, 255);
+    height: 15px;
+    top: 45%;
+    transform: translate-y(50%);
+    z-index: 1;
+    &::-webkit-progress-bar { background: rgb(233, 233, 235); }
+    &::-webkit-progress-value {background: rgb(47, 111, 230)}
 }
 
 .product-img{
@@ -19,6 +31,26 @@
     width: 60px;
     height: 60px;
 }
+.btn-outline-info{
+    height: 40px;
+}
+
+.product-num-cost{
+    width: 300px;
+    .product-num{
+        width: 200px;
+    }
+    .product-num-count{
+        width: 50px;
+    }
+}
+// 用css來隱藏input[type = number]的上下箭頭
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .payment-title{
     width: 100px;
@@ -27,3 +59,4 @@
 .payment-data{
     width: 100px;
 }
+
