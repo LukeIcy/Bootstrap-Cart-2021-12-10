@@ -107,9 +107,10 @@
 						<div class="product-num-cost d-flex  align-items-center justify-content-between">
 							<div class="product-num d-flex">
 								<button type="button" class="minus-btn btn btn-outline-info">-</button>
-								<!-- input裡面不要負數的解法之一 oninput="value=value.replace('-', '') -->
+								<!-- input裡面不要負數的解法之一 oninput="value=value.replace('-', '') 
+								      取代：'-'被''取代的意思，取代兩個就多一次replace-->
 								<input type="number" class="order-input product-num-count form-control mx-3" value="1"
-									oninput="value=value.replace('-', '')">
+									oninput="value=value.replace('-', '').replace('.', '')">
 								<button type="button" class="add-btn btn btn-outline-info">+</button>
 							</div>
 							<!-- 商品單價 -->

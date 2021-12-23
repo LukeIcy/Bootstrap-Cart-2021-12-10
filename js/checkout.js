@@ -46,7 +46,7 @@ addBtn.forEach(function (btn, index) {
     });
 });
 
-// 每次點擊增加按鈕，對應的單項商品數量+1
+// 每次點擊增加按鈕，對應的單項商品數量-1
 minusBtn.forEach(function (btn, index) {
     btn.addEventListener('click', function () {
         // 以下是防呆之一
