@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- bootstrap Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- fontawesome Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- 自己寫的css記得放在引入的CDN下面，layout要有獨立的css-->
+	<link rel="stylesheet" href="./css/layout.css">
+	<link rel="stylesheet" href="./css/blog-create.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+				<img src="./img/pepsi.png" width="80" height="80"
+					alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<div class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="./checkout01.html">
+                            <!-- FontAwesome放在a中 -->
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</div>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+                            <!-- FontAwesome放在a中 -->
+							<i class="fas fa-user"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="./login.html">Login</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <main>
+		<div class="container"></div>
+		<form action="">
+			<div class="row">
+				<label for="title">文章標題</label>
+				<input type="text" id="title" name="title">
+			</div>
+			<div class="row">
+				<label for="author">文章作者</label>
+				<input type="text" id="author" name="author">
+			</div>
+			<div class="row custom">
+				<label for="content">文章內文</label>
+				<textarea name="content" id="content"></textarea>
+			</div>
+			<div class="row btn">
+				<a href="./blog.html">取消</a>
+				<button type="submit">新增文章</button>
+			</div>
+
+		</form>
+    </main>
+
+    <footer>
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- 如果欄位不是網格系統中的類型，直接使用col即可，在這個案例中，用5個col -->
+                    <div class="col-12 col-lg-4">
+						<div class="footer-brand mb-2">
+							<img class="mr-2" src="./img/pepsi.png" width="50px" alt="">
+							<span class="brand-name h4 mt-4">帕系可樂</span>
+						</div>
+						<p class="footer-intro ml-1">帕系可樂就是百事可樂，不要懷疑。</p>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg">
+                        <ul class="foot-menu text-center">
+                            <li class="foot-menu-item">CATEGORIES</li>
+                            <li class="foot-menu-item">First Link</li>
+                            <li class="foot-menu-item">Second Link</li>
+                            <li class="foot-menu-item">Third Link</li>
+                            <li class="foot-menu-item">Fourth Link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light py-1 pt-3 pb-3">
+            <div class="container  d-flex justify-content-between">
+                <div class="copyright">
+                    © 2020 Tailblocks — @knyttneve
+                </div>
+                <div class="community">
+                    <i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<!-- jquery Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<!-- popper Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

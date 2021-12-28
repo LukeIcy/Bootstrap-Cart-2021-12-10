@@ -1,0 +1,36 @@
+main{
+    .function-area{
+        width: 100%;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 100px;
+        a{
+            color: white;
+        }
+    }
+    #message{
+        width: 100%;
+        height: auto;
+        background-color: rgb(253, 253, 192);
+        padding: 20px 100px;
+        .message-card{
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 30px;        
+            .msg-info{
+                display: flex;
+                align-items: flex-end;        
+                .title{
+                    font-size: 28px;
+                    margin-right: 30px;
+                }                
+                .author{
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+

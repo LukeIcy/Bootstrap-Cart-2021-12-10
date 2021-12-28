@@ -1,0 +1,30 @@
+form{
+    width: 100%;
+    background-color: lightblue;
+    padding:50px;
+    .row{
+        margin:10px 0px;
+        display: flex;
+
+    }
+
+    .row.custom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row.btn{
+        display: flex;
+        justify-content: center;
+        a{
+            margin-right: 50px;
+            color: rgb(118, 118, 118);;
+            background-color: rgb(200, 200, 200);
+            padding: 1px 6px;
+            border-width: 2px;
+            border-style: outset;
+            border-color: rgb(118, 118, 118);
+            border-image: initial;
+        }
+    }
+}
