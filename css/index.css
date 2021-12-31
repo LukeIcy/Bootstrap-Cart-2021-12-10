@@ -4,9 +4,8 @@
   border-radius: 10px;
 }
 
-#carousel .swiper {
-  width: 100%;
-  height: 768px;
+#carousel .swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #2d5c46;
 }
 
 #service h1 {
@@ -105,7 +104,7 @@
 }
 
 .commodity-swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: red;
+  background-color: #55f8ac;
   width: 10px;
   height: 10px;
 }
@@ -149,5 +148,11 @@
 #map iframe {
   position: absolute;
   top: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .offset-1 {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

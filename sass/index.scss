@@ -4,8 +4,28 @@
 
 #carousel {
 	.swiper {
-		width: 100%;
-		height: 768px;
+		// 本來想找時間來解決一下swiper的rwd問題，後來發現他根本不需要下面那些註解的東西
+		// 被伯鈞帶偏了，哭。
+		// width: 100%;
+		// height: 100%;
+		// @media screen and(max-width:1496px) {
+		// 	height: 600px;	
+		// }	
+		// @media screen and(max-width:1020px) {
+		// 	height: 500px;	
+		// }
+		// @media screen and(max-width:768px) {
+		// 	height: 300px;	
+		// }
+		.swiper-pagination {
+			// bottom: 0px;
+			// top: 90%;
+			.swiper-pagination-bullet {
+				background-color: rgb(45, 92, 70);
+				// width: 10px;
+				// height: 10px;
+			}
+		}
 	}
 }
 
@@ -107,7 +127,7 @@
 	.swiper-pagination {
 		bottom: 0;
 		.swiper-pagination-bullet {
-			background-color: rgb(255, 0, 0);
+			background-color: rgb(85, 248, 172);
 			width: 10px;
 			height: 10px;
 		}
@@ -152,3 +172,10 @@
 		top: 3rem;
 	}
 }
+
+@media screen and (max-width : 767px) {
+	.offset-1 {
+		margin: 0;
+	}	
+}
+
